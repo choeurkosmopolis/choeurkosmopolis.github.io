@@ -118,6 +118,18 @@ footer {
   display: block;
 }
 
+/* Poster: smaller, floated right within its section */
+.poster {
+  float: right;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 0 1rem 1.5rem;
+  display: block;
+}
+
 /* Responsive YouTube embed */
 .video-wrapper {
   position: relative;
@@ -141,6 +153,11 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .poster {
+    float: none;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
   nav ul {
     flex-direction: column;
     gap: 1rem;
