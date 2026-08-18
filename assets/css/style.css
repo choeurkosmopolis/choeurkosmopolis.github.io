@@ -158,6 +158,23 @@ footer {
   border: 0;
 }
 
+/* Smaller titled video card */
+.video-card {
+  max-width: 480px;
+}
+
+.video-title {
+  margin-top: 0;
+}
+
+/* Responsive: let the video card grow full-width on small screens */
+@media (max-width: 768px) {
+  .video-card {
+    max-width: 100%;
+  }
+}
+
+
 /* Responsive design */
 @media (max-width: 768px) {
   .poster {
