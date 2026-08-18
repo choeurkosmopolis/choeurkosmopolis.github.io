@@ -118,16 +118,23 @@ footer {
   display: block;
 }
 
-/* Poster: smaller, floated right within its section */
+/* Poster: floated right, sized to a usable minimum so the card fits around it */
 .poster {
   float: right;
-  width: 100%;
+  width: 260px;
   max-width: 280px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 0 0 1rem 1.5rem;
   display: block;
+}
+
+/* Clearfix so a .card grows to contain floated children (e.g. the poster) */
+.card::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Responsive YouTube embed */
