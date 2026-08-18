@@ -1,12 +1,12 @@
 /* Funky Choir Website Style */
 :root {
-  --primary-color: #6a11cb; /* Purple */
-  --secondary-color: #2575fc; /* Blue */
+  --primary-color: #8314dedd; /* Purple */
+  --secondary-color: #9106e2; /* Blue */
   --accent-color: #ff6b6b; /* Coral */
   --light-color: #f8f9fa; /* Light gray */
   --dark-color: #212529; /* Dark gray */
   --font-main: 'Montserrat', sans-serif;
-  --font-heading: 'Pacifico', cursive;
+  --font-heading: 'Montserrat', sans-serif;
 }
 
 body {
