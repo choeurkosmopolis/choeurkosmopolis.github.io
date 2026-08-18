@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Choeur Kosmopolis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Choeur Kosmopolis</h1>
+    <p>Choeur mixte d'adultes basé à Bruxelles. Chansons d'Europe et du monde.</p>
+    <nav>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/about">À propos</a></li>
+        <li><a href="/videos">Vidéos</a></li>
+        <li><a href="/events">Événements</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Contactez-nous</h2>
+      <p>
+        Une question, une envie de rejoindre le choeur ou une demande de
+        spectacle ? Écrivez-nous, nous vous répondrons avec plaisir.
+      </p>
+      <form action="mailto:contact@choeurkosmopolis.be" method="post" enctype="text/plain">
+        <p>
+          <label for="nom">Nom :</label><br>
+          <input type="text" id="nom" name="nom" required style="width:100%;max-width:400px;padding:0.5rem;margin-top:0.3rem;border-radius:5px;border:1px solid #ccc;">
+        </p>
+        <p>
+          <label for="email">Email :</label><br>
+          <input type="email" id="email" name="email" required style="width:100%;max-width:400px;padding:0.5rem;margin-top:0.3rem;border-radius:5px;border:1px solid #ccc;">
+        </p>
+        <p>
+          <label for="message">Message :</label><br>
+          <textarea id="message" name="message" rows="5" required style="width:100%;max-width:600px;padding:0.5rem;margin-top:0.3rem;border-radius:5px;border:1px solid #ccc;"></textarea>
+        </p>
+        <p>
+          <button type="submit" class="btn">Envoyer</button>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Choeur Kosmopolis</p>
+  </footer>
+</body>
+</html>
