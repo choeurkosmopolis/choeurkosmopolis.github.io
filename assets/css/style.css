@@ -83,6 +83,13 @@ nav a:hover::after {
   opacity: 1;
 }
 
+/* Logo Link - makes title clickable */
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
 /* Logo Title - KOSMOPOLIS with MO in rainbow colors */
 .logo-title {
   font-family: var(--font-heading);
@@ -115,10 +122,6 @@ nav a:hover::after {
 }
 
 /* Style the MO in rainbow colors */
-.logo-title {
-  position: relative;
-}
-
 .logo-title span.rainbow {
   background: linear-gradient(135deg, var(--accent-coral), var(--accent-orange), var(--accent-teal), var(--accent-purple));
   -webkit-background-clip: text;
