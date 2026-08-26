@@ -1,106 +1,185 @@
-/* Modern Dark Theme - Kosmopolis */
+/* ============================================
+   KOSMOPOLIS - Identité Graphique Professionnelle
+   Inspiré par InChorus : élégant, épuré, couleurs récurrentes
+   ============================================ */
+
+/* --- VARIABLES DE COULEURS --- */
 :root {
-  --bg-dark: #131328;        /* Deep blue-black background */
-  --bg-light: #ecedf2;       /* Soft off-white for cards */
-  --accent-coral: #ff5c72;   /* Vibrant coral */
-  --accent-orange: #f2a93b;  /* Warm orange */
-  --accent-teal: #2bb3a3;    /* Fresh teal */
-  --accent-purple: #9b5de5;  /* Rich purple */
-  --text-light: #ffffff;     /* White text */
-  --text-dark: #131328;      /* Dark text on light backgrounds */
-  --text-muted: #b9bbc9;     /* Muted/secondary text */
-  --border-color: rgba(255, 255, 255, 0.1);
-  --shadow-color: rgba(0, 0, 0, 0.3);
-  --font-main: 'Montserrat', sans-serif;
-  --font-heading: 'Montserrat', sans-serif;
+  /* Couleurs principales */
+  --bg-dark: #0f172a;          /* Bleu nuit profond - Fond principal */
+  --bg-light: #f8f9fa;        /* Blanc cassé - Cartes et textes clairs */
+  
+  /* Accents récurrents */
+  --accent-gold: #d4af37;     /* Or vieilli - Accent principal */
+  --accent-turquoise: #20b2aa; /* Turquoise - Accent secondaire */
+  --accent-purple: #9370db;   /* Violet doux - Accent tertiaire */
+  
+  /* Textes */
+  --text-light: #ffffff;      /* Blanc pur */
+  --text-dark: #0f172a;       /* Bleu nuit - Texte sur fond clair */
+  --text-muted: #6c757d;      /* Gris muté */
+  
+  /* Bordures et ombres */
+  --border-gold: rgba(212, 175, 55, 0.3);
+  --border-turquoise: rgba(32, 178, 170, 0.3);
+  --shadow-gold: rgba(212, 175, 55, 0.2);
+  --shadow-turquoise: rgba(32, 178, 170, 0.2);
+  
+  /* Typographie */
+  --font-serif: 'Lora', serif;        /* Police élégante pour le contenu */
+  --font-sans: 'Montserrat', sans-serif; /* Police moderne pour les titres */
+  
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- RESET & BASE --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-main);
-  line-height: 1.6;
+  font-family: var(--font-serif);
+  line-height: 1.7;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
   margin: 0;
   padding: 0;
-  color: var(--text-light);
-  background-color: var(--bg-dark);
 }
 
+/* --- TYPOGRAPHIE --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-dark);
+}
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: 1.2rem;
+  color: var(--text-dark);
+}
+
+strong {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+a {
+  color: var(--accent-gold);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent-turquoise);
+}
+
+/* --- LAYOUT --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ============================================
+   HEADER & NAVIGATION
+   ============================================ */
 header {
-  background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a3a 100%);
+  background: linear-gradient(180deg, var(--bg-dark) 0%, #1a2035 100%);
   color: var(--text-light);
-  text-align: center;
-  padding: 1.5rem 0 2.5rem 0;
-  border-bottom: 1px solid var(--border-color);
+  padding: 2rem 0 3rem 0;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Navigation - now above the title */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-turquoise), var(--accent-purple));
+}
+
+/* Navigation */
 nav {
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 0.8rem 1rem;
-  border-radius: 8px;
-  margin: 0 auto 1rem auto;
-  max-width: 80%;
-  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-nav a {
+nav li a {
   color: var(--text-light);
-  text-decoration: none;
-  font-weight: 500;
+  font-family: var(--font-sans);
   font-size: 0.95rem;
-  transition: all 0.3s;
-  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
+  transition: var(--transition);
   position: relative;
 }
 
-nav a::after {
+nav li a::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--accent-coral), var(--accent-orange), var(--accent-teal), var(--accent-purple));
-  opacity: 0;
-  transition: opacity 0.3s;
+  background: var(--accent-gold);
+  transition: var(--transition);
 }
 
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+nav li a:hover {
+  background-color: rgba(212, 175, 55, 0.1);
 }
 
-nav a:hover::after {
-  opacity: 1;
+nav li a:hover::after {
+  width: 80%;
 }
 
-/* Logo Link - makes title clickable */
+/* Logo */
 .logo-link {
   text-decoration: none;
   color: inherit;
-  display: inline-block;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-/* Logo Title - KOSMOPOLIS with MO in rainbow colors */
 .logo-title {
-  font-family: var(--font-heading);
   font-size: 3.5rem;
-  margin: 0;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: var(--text-light);
   position: relative;
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .logo-title::after {
@@ -109,133 +188,189 @@ nav a:hover::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, 
-    var(--accent-coral) 0%, 
-    var(--accent-coral) 25%, 
-    var(--accent-orange) 25%, 
-    var(--accent-orange) 50%, 
-    var(--accent-teal) 50%, 
-    var(--accent-teal) 75%, 
-    var(--accent-purple) 75%, 
+    var(--accent-gold) 0%, 
+    var(--accent-gold) 33%, 
+    var(--accent-turquoise) 33%, 
+    var(--accent-turquoise) 66%, 
+    var(--accent-purple) 66%, 
     var(--accent-purple) 100%);
 }
 
-/* Style the MO in rainbow colors */
+/* Style spécial pour MO dans KOSMOPOLIS */
 .logo-title span.rainbow {
-  background: linear-gradient(135deg, var(--accent-coral), var(--accent-orange), var(--accent-teal), var(--accent-purple));
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-turquoise));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-header p {
-  font-size: 1.1rem;
-  margin: 0.8rem 0 0 0;
-  color: var(--text-muted);
-  font-weight: 300;
-}
-
-main {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-footer {
+header > p {
   text-align: center;
-  padding: 1.5rem;
-  background-color: var(--bg-dark);
-  color: var(--text-muted);
-  margin-top: 3rem;
-  border-top: 1px solid var(--border-color);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  margin-top: 1rem;
 }
 
-/* Card style for events or articles */
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+main {
+  padding: 2rem 0;
+}
+
+/* --- CARTES --- */
 .card {
-  background: var(--bg-light);
-  color: var(--text-dark);
+  background: white;
   border-radius: 12px;
-  box-shadow: 0 8px 24px var(--shadow-color);
-  padding: 2rem;
-  margin: 1.5rem 0;
-  border: none;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+  border: 1px solid var(--border-turquoise);
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0 8px 30px var(--shadow-gold);
+  transform: translateY(-2px);
 }
 
 .card h2,
 .card h3 {
   color: var(--bg-dark);
-  font-weight: 700;
-  margin-top: 0;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.card h2::after,
+.card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-gold);
+  border-radius: 2px;
 }
 
 .card p {
   color: var(--text-dark);
-  line-height: 1.7;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
-/* Button style */
-.btn {
-  display: inline-block;
-  background: var(--accent-coral);
-  color: white;
-  padding: 0.8rem 1.8rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.btn:hover {
-  background: var(--accent-orange);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(242, 169, 59, 0.4);
-}
-
-/* Image style */
+/* --- IMAGES --- */
 .chorale-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 6px 16px var(--shadow-color);
   margin: 1.5rem auto;
   display: block;
+  box-shadow: 0 6px 20px var(--shadow-turquoise);
+  transition: var(--transition);
 }
 
-/* Poster: floated right, sized to fit card */
+.chorale-image:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 25px var(--shadow-gold);
+}
+
+/* Poster (image à droite dans les cartes) */
 .poster {
   float: right;
-  width: 260px;
-  max-width: 280px;
+  width: 280px;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 6px 16px var(--shadow-color);
-  margin: 0 0 1.5rem 1.5rem;
-  display: block;
+  margin: 0 0 1.5rem 2rem;
+  box-shadow: 0 6px 20px var(--shadow-turquoise);
+  transition: var(--transition);
 }
 
-/* Clearfix for cards with floated elements */
+.poster:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px var(--shadow-gold);
+}
+
+/* Clearfix pour les cartes avec éléments flottants */
 .card::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive YouTube embed */
+/* ============================================
+   BOUTONS
+   ============================================ */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-gold), #b8941f);
+  color: var(--bg-dark);
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px var(--shadow-gold);
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #b8941f, var(--accent-gold));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px var(--shadow-gold);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Bouton secondaire (turquoise) */
+.btn-secondary {
+  background: linear-gradient(135deg, var(--accent-turquoise), #17a2b8);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #17a2b8, var(--accent-turquoise));
+  box-shadow: 0 6px 15px var(--shadow-turquoise);
+}
+
+/* ============================================
+   VIDÉOS
+   ============================================ */
+.video-card {
+  margin: 2rem auto;
+}
+
+.video-title {
+  margin-top: 0;
+  color: var(--bg-dark);
+  padding-bottom: 0.5rem;
+}
+
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 6px 16px var(--shadow-color);
   margin: 1.5rem 0;
   background: var(--bg-dark);
+  box-shadow: 0 6px 20px var(--shadow-turquoise);
 }
 
 .video-wrapper iframe {
@@ -247,93 +382,228 @@ footer {
   border: 0;
 }
 
-/* Titled video card */
-.video-card .video-wrapper {
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
+/* ============================================
+   FORMULAIRE DE CONTACT
+   ============================================ */
+form {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.video-title {
-  margin-top: 0;
-  color: var(--bg-dark);
-}
-
-/* Form styling for contact page */
 form p {
-  margin: 1rem 0;
+  margin: 1.2rem 0;
+}
+
+label {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  max-width: 500px;
-  padding: 0.75rem;
-  margin-top: 0.5rem;
+  padding: 0.85rem;
+  border: 2px solid #e0e0e0;
   border-radius: 6px;
-  border: 1px solid #ddd;
-  font-family: var(--font-main);
+  font-family: var(--font-serif);
   font-size: 1rem;
-  background-color: white;
   color: var(--text-dark);
+  transition: var(--transition);
+  background-color: white;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--accent-teal);
-  box-shadow: 0 0 0 3px rgba(43, 179, 163, 0.2);
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
 }
 
-label {
-  display: block;
-  color: var(--text-dark);
-  font-weight: 600;
-  margin-bottom: 0.3rem;
+textarea {
+  min-height: 150px;
+  resize: vertical;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+button[type="submit"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  text-align: center;
+  padding: 2.5rem 0;
+  background: linear-gradient(180deg, #1a2035 0%, var(--bg-dark) 100%);
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 3rem;
+}
+
+footer p {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1024px) {
   .poster {
     float: none;
     max-width: 100%;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
+    display: block;
   }
+  
+  .card {
+    padding: 2rem;
+  }
+}
 
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  
+  .logo-title {
+    font-size: 2.5rem;
+  }
+  
   nav ul {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
   }
+  
+  nav li a {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .card {
+    padding: 1.8rem;
+    margin: 1.5rem auto;
+  }
+  
+  .chorale-image {
+    max-width: 100%;
+  }
+  
+  .video-wrapper {
+    padding-bottom: 75%; /* Plus carré sur mobile */
+  }
+}
 
+@media (max-width: 480px) {
   .logo-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
   }
-
-  nav a {
-    font-size: 0.9rem;
-    padding: 0.5rem;
+  
+  .logo-title::after {
+    height: 2px;
   }
-
+  
+  nav ul {
+    gap: 0.8rem;
+  }
+  
+  nav li a {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+  
   .card {
     padding: 1.5rem;
   }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
 }
 
-/* Link styling */
-a {
-  color: var(--accent-coral);
-  text-decoration: none;
-  transition: color 0.3s;
+/* ============================================
+   UTILITAIRES & DÉTAILS
+   ============================================ */
+
+/* Surlignage des liens dans le texte */
+.card a:not(.btn) {
+  color: var(--accent-gold);
+  text-decoration: underline;
+  text-decoration-color: rgba(212, 175, 55, 0.3);
+  text-underline-offset: 3px;
 }
 
-a:hover {
-  color: var(--accent-purple);
+.card a:not(.btn):hover {
+  color: var(--accent-turquoise);
+  text-decoration-color: var(--accent-turquoise);
 }
 
-/* Strong text */
-strong {
-  color: var(--text-dark);
-  font-weight: 700;
+/* Style pour les listes */
+.card ul,
+.card ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Animation subtile pour les cartes au chargement */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Délai d'animation pour chaque carte */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+
+/* ============================================
+   IMPRESSION
+   ============================================ */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  header {
+    background: var(--bg-dark);
+    color: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+  
+  nav {
+    display: none;
+  }
 }
