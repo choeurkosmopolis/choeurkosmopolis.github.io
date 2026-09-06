@@ -283,8 +283,8 @@ main {
 }
 
 .chef-image {
-  width: 70%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 10px;
   margin: 1.5rem auto;
@@ -509,6 +509,10 @@ footer p {
   }
   
   .chorale-image {
+    max-width: 100%;
+  }
+
+  .chef-image {
     max-width: 100%;
   }
   
