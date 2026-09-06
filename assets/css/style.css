@@ -282,6 +282,22 @@ main {
   box-shadow: 0 8px 25px var(--shadow-gold);
 }
 
+.chef-image {
+  width: 70%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  display: block;
+  box-shadow: 0 6px 20px var(--shadow-turquoise);
+  transition: var(--transition);
+}
+
+.chef-image:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 25px var(--shadow-gold);
+}
+
 /* Poster (image à droite dans les cartes) */
 .poster {
   float: right;
