@@ -322,7 +322,7 @@ main {
   max-width: 300px;
   height: auto;
   border-radius: 10px;
-  margin: 0 0 1.5rem 2rem;
+  margin: 0 2rem 1.5rem 0;
   box-shadow: 0 6px 20px var(--shadow-turquoise);
   transition: var(--transition);
 }
