@@ -542,12 +542,12 @@ footer p {
   
   nav li {
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
   }
   
   nav li a {
-    font-size: 1.5rem;
-    padding: 0.75rem 1.5rem;
+    font-size: 2.2rem;
+    padding: 0.5rem 1.5rem;
     display: block;
   }
 }
