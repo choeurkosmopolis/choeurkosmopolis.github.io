@@ -522,7 +522,7 @@ footer p {
     display: flex;
   }
   
-  nav ul {
+  #main-menu {
     display: none;
     position: fixed;
     top: 60px;
@@ -536,7 +536,7 @@ footer p {
     margin: 0;
   }
   
-  nav ul.expanded {
+  #main-menu.expanded {
     display: block;
   }
   
