@@ -315,6 +315,22 @@ main {
   box-shadow: 0 8px 25px var(--shadow-gold);
 }
 
+/* Poster (image à gauche dans les cartes) */
+.posterleft {
+  float: left;
+  width: 280px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 0 1.5rem 2rem;
+  box-shadow: 0 6px 20px var(--shadow-turquoise);
+  transition: var(--transition);
+}
+
+.posterleft:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px var(--shadow-gold);
+}
 /* Clearfix pour les cartes avec éléments flottants */
 .card::after {
   content: "";
