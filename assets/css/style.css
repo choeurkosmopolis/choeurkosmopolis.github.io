@@ -537,7 +537,7 @@ footer p {
   }
   
   nav ul.expanded {
-    display: flex;
+    display: block;
   }
   
   nav li {
