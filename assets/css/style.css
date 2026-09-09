@@ -164,17 +164,22 @@ nav li a:hover::after {
 }
 
 /* Logo in menu item */
+.logo-item {
+  padding: 0;
+  margin: 0;
+}
+
 .logo-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: block;
+  padding: 0;
   text-decoration: none;
   color: var(--text-light);
 }
 
 .logo-image {
-  height: 1.8rem;
+  height: 2.2rem;
   width: auto;
+  display: block;
 }
 
 .logo-title {
