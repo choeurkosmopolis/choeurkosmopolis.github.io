@@ -163,18 +163,18 @@ nav li a:hover::after {
   width: 80%;
 }
 
-/* Logo in nav */
+/* Logo in menu item */
 .logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
-  color: inherit;
-  display: inline-block;
+  color: var(--text-light);
 }
 
 .logo-image {
-  height: 2.2rem;
+  height: 1.8rem;
   width: auto;
-  vertical-align: middle;
-  margin-right: 1rem;
 }
 
 .logo-title {
