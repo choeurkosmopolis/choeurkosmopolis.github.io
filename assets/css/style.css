@@ -163,21 +163,18 @@ nav li a:hover::after {
   width: 80%;
 }
 
-/* Logo */
+/* Logo in nav */
 .logo-link {
   text-decoration: none;
   color: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  text-align: center;
-  margin-bottom: 1rem;
+  display: inline-block;
 }
 
 .logo-image {
-  height: 60px;
+  height: 2.2rem;
   width: auto;
+  vertical-align: middle;
+  margin-right: 1rem;
 }
 
 .logo-title {
@@ -186,8 +183,14 @@ nav li a:hover::after {
   letter-spacing: 3px;
   color: var(--text-light);
   position: relative;
-  display: inline-block;
+  display: block;
   padding-bottom: 15px;
+  text-align: center;
+}
+
+.logo-title a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .logo-title::after {
