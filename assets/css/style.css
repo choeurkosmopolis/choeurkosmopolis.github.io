@@ -171,13 +171,21 @@ nav li a:hover::after {
 
 .logo-link {
   display: block;
-  padding: 0;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   color: var(--text-light);
 }
 
+.logo-link:hover {
+  background-color: transparent !important;
+}
+
+.logo-link:hover::after {
+  display: none !important;
+}
+
 .logo-image {
-  height: 2.2rem;
+  height: 2.8rem;
   width: auto;
   display: block;
 }
@@ -579,6 +587,10 @@ footer p {
     text-align: center;
     padding: 0.5rem 0;
     margin: 0;
+  }
+  
+  .logo-item {
+    text-align: center;
   }
   
   #main-menu li a {
