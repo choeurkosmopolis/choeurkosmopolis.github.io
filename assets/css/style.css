@@ -362,7 +362,7 @@ main {
 
 /* Crédit image sous une image flottante (poster) */
 .image-credit {
-  font-size: 0.56rem;
+  font-size: 0.7rem;
   font-style: italic;
   color: var(--text-muted);
   text-align: center;
