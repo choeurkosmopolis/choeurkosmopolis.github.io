@@ -346,16 +346,27 @@ main {
   box-shadow: 0 8px 25px var(--shadow-gold);
 }
 
-/* Crédit image sous une image flottante (poster) */
-.image-credit {
+/* Figure contenant une image flottante et son crédit */
+.poster-figure {
   float: right;
   width: 280px;
   max-width: 300px;
   margin: 0 0 1.5rem 2rem;
-  font-size: 0.8rem;
+}
+
+.poster-figure .poster {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+
+/* Crédit image sous une image flottante (poster) */
+.image-credit {
+  font-size: 0.56rem;
   font-style: italic;
   color: var(--text-muted);
   text-align: center;
+  margin: 0.5rem 0 0;
 }
 
 /* Poster (image à gauche dans les cartes) */
@@ -632,11 +643,11 @@ footer p {
     display: block;
   }
   
-  .image-credit {
+  .poster-figure {
     float: none;
     width: auto;
     max-width: 100%;
-    margin: 0.5rem auto 1.5rem;
+    margin: 1.5rem auto;
   }
   
   .card {
