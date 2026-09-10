@@ -120,7 +120,7 @@ header::before {
 nav {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 1rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 nav ul {
