@@ -168,17 +168,14 @@ nav li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .logo-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: var(--text-light);
-  height: 100%;
+  height: 2.95rem;
 }
 
 .logo-link:hover {
@@ -190,7 +187,7 @@ nav li a:hover::after {
 }
 
 .logo-image {
-  max-height: 100%;
+  height: 2.95rem;
   width: auto;
   display: block;
 }
