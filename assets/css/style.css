@@ -346,6 +346,18 @@ main {
   box-shadow: 0 8px 25px var(--shadow-gold);
 }
 
+/* Crédit image sous une image flottante (poster) */
+.image-credit {
+  float: right;
+  width: 280px;
+  max-width: 300px;
+  margin: 0 0 1.5rem 2rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+}
+
 /* Poster (image à gauche dans les cartes) */
 .posterleft {
   float: left;
@@ -618,6 +630,13 @@ footer p {
     max-width: 100%;
     margin: 1.5rem auto;
     display: block;
+  }
+  
+  .image-credit {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    margin: 0.5rem auto 1.5rem;
   }
   
   .card {
