@@ -137,10 +137,13 @@ nav li a {
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   border-radius: 4px;
   transition: var(--transition);
   position: relative;
+  height: 2.95rem;
+  display: flex;
+  align-items: center;
 }
 
 nav li a::after {
@@ -166,16 +169,16 @@ nav li a:hover::after {
 /* Logo in menu item */
 .logo-item {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 
 .logo-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   text-decoration: none;
   color: var(--text-light);
-  height: 2.95rem;
+  height: 100%;
 }
 
 .logo-link:hover {
