@@ -21,26 +21,31 @@
             <img src="/assets/images/Logo_Kosmopolis_2019-removebg.png" alt="Logo Kosmopolis" class="logo-image">
           </a>
         </li>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/about">À propos</a></li>
-        <li><a href="/medias">Medias</a></li>
-        <li><a href="/agenda">Agenda</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="/about" data-i18n="nav.about">À propos</a></li>
+        <li><a href="/medias" data-i18n="nav.medias">Médias</a></li>
+        <li><a href="/agenda" data-i18n="nav.agenda">Agenda</a></li>
+        <li><a href="/contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language / Taal">
+      <button type="button" data-lang="fr">FR</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="nl">NL</button>
+    </div>
     <h1 class="logo-title"><a href="/">KOS<span class="rainbow">MO</span>POLIS</a></h1>
-    <p>Choeur de chambre mixte basé à Bruxelles.</p>
+    <p data-i18n="header.tagline">Choeur de chambre mixte basé à Bruxelles.</p>
   </header>
 
   <main>
     <div class="card">
-      <h2>Stage choral - Septembre 2026</h2>
+      <h2 data-i18n="agenda.stage">Stage choral - Septembre 2026</h2>
       <img src="/assets/images/stage-choral.jpg" alt="Détente pendant le stage" class="poster">
-      <p><strong>Date :</strong> 19 & 20 septembre 2026 de 10h à 17h30<br>
-        (avec mini concert le dimanche à 17h)
+      <p><strong data-i18n="agenda.stage.date">Date :</strong> <span data-i18n="agenda.stage.datevalue">19 & 20 septembre 2026 de 10h à 17h30<br>
+        (avec mini concert le dimanche à 17h)</span>
       </p>
-      <p><strong>Lieu :</strong> La Maison Qui Chante, Rue du Viaduc 122, 1050 Ixelles</p>
-      <p>
+      <p><strong data-i18n="agenda.stage.place">Lieu :</strong> <span data-i18n="agenda.stage.placevalue">La Maison Qui Chante, Rue du Viaduc 122, 1050 Ixelles</span></p>
+      <p data-i18n="agenda.stage.p1">
         Le choeur Kosmopolis vous propose lors d'un weekend exceptionnel une immersion avec les choristes
         dans un travail axé sur le répertoire contemporain à 8 voix.<br>
         En s'appuyant sur trois magnifiques pièces contemporaines, nous explorerons
@@ -48,44 +53,43 @@
         Des outils de technique vocale spécifiques vous seront également proposés 
         pour augmenter votre confort dans votre pratique chorale et individuelle.<br>
       </p>
-      <p>Le répertoire : 
-        (à confirmer en fonction du nombre d'inscrits)
-        <ul>
+      <p data-i18n="agenda.stage.repertoire">Le répertoire : 
+        (à confirmer en fonction du nombre d'inscrits)</p>
+      <ul>
         <li>Caroline SHAW,  And the Swallow</li>
         <li>Andrej MAKOR, O Emmanuel</li>
         <li>Jussi CHYDENIUS, Deep in the night</li>
-        </ul>
-      </p>
-      <a href="https://forms.gle/a48EursARvbAhdEw5" class="btn" target="_blank" rel="noopener noreferrer">Je m'inscris</a>
+      </ul>
+      <a href="https://forms.gle/a48EursARvbAhdEw5" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="agenda.stage.register">Je m'inscris</a>
     </div>
 
     <div class="card">
-      <h2>Répétitions hebdomadaires</h2>
-      <p><strong>Quand :</strong> Tous les lundis à 19h</p>
-      <p>
+      <h2 data-i18n="agenda.rehearsals">Répétitions hebdomadaires</h2>
+      <p><strong data-i18n="agenda.rehearsals.when">Quand :</strong> <span data-i18n="agenda.rehearsals.whenvalue">Tous les lundis à 19h</span></p>
+      <p data-i18n="agenda.rehearsals.p1">
         Nos répétitions sont ouvertes à toute personne souhaitant chanter
         avec nous.<br>
         Nous répétons tous les <strong>lundis de 19h à 21h30</strong> à La Maison Qui Chante à Ixelles.
       </p>
-      <a href="/contact" class="btn">Nous rejoindre</a>
+      <a href="/contact" class="btn" data-i18n="agenda.rehearsals.join">Nous rejoindre</a>
     </div>
 
     <div class="card">
-      <h2>Concert de fin de saison 2025-26</h2>
+      <h2 data-i18n="agenda.concert">Concert de fin de saison 2025-26</h2>
       <img src="/assets/images/concert_2026-06-20-affiche.jpg" alt="Affiche du concert de fin d'année" class="poster">
-      <p><strong>Date :</strong> 20 juin 2026 à 20h</p>
-      <p><strong>Lieu :</strong> Église Sainte-Anne, Auderghem</p>
-      <p>
+      <p><strong data-i18n="agenda.concert.date">Date :</strong> <span data-i18n="agenda.concert.datevalue">20 juin 2026 à 20h</span></p>
+      <p><strong data-i18n="agenda.concert.place">Lieu :</strong> <span data-i18n="agenda.concert.placevalue">Église Sainte-Anne, Auderghem</span></p>
+      <p data-i18n="agenda.concert.p1">
         Venez nous écouter pour notre concert de fin d'année ! Un programme
         varié mêlant chansons d'Europe et du monde.
       </p>
-      <a href="https://www.billetweb.fr/un-soir-bleu-dete" class="btn">Réserver une place</a>
+      <a href="https://www.billetweb.fr/un-soir-bleu-dete" class="btn" data-i18n="agenda.concert.book">Réserver une place</a>
     </div>
 
   </main>
 
   <footer>
-    <p>© 2026 - Choeur Kosmopolis</p>
+    <p data-i18n="footer.copyright">© 2026 - Choeur Kosmopolis</p>
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -113,5 +117,6 @@
       }
     });
   </script>
+  <script src="/assets/js/i18n.js"></script>
 </body>
 </html>

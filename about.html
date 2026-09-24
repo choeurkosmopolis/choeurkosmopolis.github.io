@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos - Kosmopolis</title>
+  <title data-i18n="about.title">À propos - Kosmopolis</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -21,27 +21,32 @@
             <img src="/assets/images/Logo_Kosmopolis_2019-removebg.png" alt="Logo Kosmopolis" class="logo-image">
           </a>
         </li>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/about">À propos</a></li>
-        <li><a href="/medias">Médias</a></li>
-        <li><a href="/agenda">Agenda</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="/about" data-i18n="nav.about">À propos</a></li>
+        <li><a href="/medias" data-i18n="nav.medias">Médias</a></li>
+        <li><a href="/agenda" data-i18n="nav.agenda">Agenda</a></li>
+        <li><a href="/contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language / Taal">
+      <button type="button" data-lang="fr">FR</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="nl">NL</button>
+    </div>
     <h1 class="logo-title"><a href="/">KOS<span class="rainbow">MO</span>POLIS</a></h1>
-    <p>Choeur de chambre mixte basé à Bruxelles.</p>
+    <p data-i18n="header.tagline">Choeur de chambre mixte basé à Bruxelles.</p>
   </header>
 
   <main>
     <div class="card">
-      <h2>À propos du Choeur Kosmopolis</h2>
+      <h2 data-i18n="about.heading">À propos du Choeur Kosmopolis</h2>
       <!-- <img src="/assets/images/groupe_hall.jpg" alt="Groupe" class="chorale-image"> -->
-      <p>
+      <p data-i18n="about.p1">
         Le Choeur Kosmopolis est un choeur de chambre mixte d'adultes basé à Bruxelles.
         Créé en 2017 par Bertrand Duby, il ambitionne de défendre un répertoire a cappella 
         allant des polyphonies de la Renaissance à des pièces des XXème et XXIème siècles. 
       </p>
-      <p>
+      <p data-i18n="about.p2">
         Le Choeur Kosmopolis tire son nom de par la multiplicité des cultures et nationalités 
         des membres qui le composent et de par son répertoire éclectique qui, à sa création, 
         était axé sur les traditions chorales venues d'Europe et du monde entier.
@@ -49,9 +54,9 @@
     </div>
 
     <div class="card">
-      <h2>Le Chef</h2>
+      <h2 data-i18n="about.conductor">Le Chef</h2>
       <img src="/assets/images/chef2.png" alt="Chef" class="posterleft">
-      <p>
+      <p data-i18n="about.conductor.p1">
         Après des études d'ingénieur, Bertrand Duby intègre le Conservatoire de Bordeaux en classes 
         d'Art Lyrique et de direction de choeur.
         Il continue ensuite à perfectionner sa voix de basse en intégrant en 2014 la classe d'Art Lyrique 
@@ -61,23 +66,23 @@
         une esthétique de transparence dans le paysage choral contemporain.
       </p>
          
-      <p>
+      <p data-i18n="about.conductor.p2">
         En tant que chanteur, il se produira régulièrement comme soliste sur les grandes scènes européennes
         (La Monnaie, Opéra de Varsovie, Opéra de Metz etc...) et comme choriste des choeurs d'opéra prestigieux
         (Opéra de Paris, Festival de Bayreuth...) et dans des ensembles vocaux renommés (La Tempête, InChorus...)
       </p>
-      <p>
+      <p data-i18n="about.conductor.p3">
         Il est par ailleurs régulièrement invité comme coach vocal et/ou chef invité par divers ensembles.
       </p>
     </div>
     
     <div class="card">
-      <h2>Le Programme Musical</h2>
+      <h2 data-i18n="about.programme">Le Programme Musical</h2>
       <figure class="poster-figure">
         <img src="/assets/images/programme-birds.jpg" alt="Programme-birds" class="poster">
-        <figcaption class="image-credit">Crédit image&nbsp;: © Marc Chagall - «&nbsp;Bouquet aux Amoureux Volants&nbsp;»</figcaption>
+        <figcaption class="image-credit" data-i18n="about.credit">Crédit image&nbsp;: © Marc Chagall - «&nbsp;Bouquet aux Amoureux Volants&nbsp;»</figcaption>
       </figure>
-      <p>
+      <p data-i18n="about.programme.p1">
         Le programme de la saison 2026-27 s'articule autour du cycle Bird Raptures de Lucy Walker, jeune compositrice anglaise,  d’après le poème éponyme de Christina Rossetti, poétesse anglaise du XIXe siècle.
       </p>
       <p>
@@ -87,7 +92,7 @@
         That is so silent, sweet, and pale,<br>
         Come, so ye wake the nightingale. (...)”
       </p>
-      <p>
+      <p data-i18n="about.programme.p2">
         C'est en réalisant que les oiseaux offraient leurs plus beaux chants au crépuscule et à l'aube
         que nous avons eu envie d'explorer ces moments charnières entre le jour et la nuit,<br>
         et d’articuler tout le programme de la saison autour de ce poème,
@@ -97,7 +102,7 @@
         Oeuvres de STANFORD, SHAW, POULENC, RAVEL, MARKOR, KODALY...
       </p>
       <p>
-        <button type="button" class="btn" id="programme-btn" aria-haspopup="dialog" aria-controls="programme-modal">Programme détaillé</button>
+        <button type="button" class="btn" id="programme-btn" aria-haspopup="dialog" aria-controls="programme-modal" data-i18n="about.programme.detail">Programme détaillé</button>
       </p>
     </div>
     
@@ -105,9 +110,9 @@
 
   <div class="modal-overlay" id="programme-modal" role="dialog" aria-modal="true" aria-labelledby="programme-title" hidden>
     <div class="modal" tabindex="-1">
-      <button type="button" class="modal-close" aria-label="Fermer">&times;</button>
+      <button type="button" class="modal-close" aria-label="Fermer" data-i18n-attr="aria-label" data-i18n="modal.close">&times;</button>
       <h2 class="modal-title" id="programme-title">“Bird Raptures”</h2>
-      <p class="modal-subtitle">Programme</p>
+      <p class="modal-subtitle" data-i18n="about.modal.subtitle">Programme</p>
       <ol class="programme-list">
         <li>Camille SAINT-SAËNS, <em>Calme des nuits</em>, Op. 68: N°1</li>
         <li>Lucy WALKER, <em>Bird Raptures</em>: I. The Nightingale</li>
@@ -129,7 +134,7 @@
   </div>
 
   <footer>
-    <p>© 2026 - Choeur Kosmopolis</p>
+    <p data-i18n="footer.copyright">© 2026 - Choeur Kosmopolis</p>
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -194,5 +199,6 @@
       }
     });
   </script>
+  <script src="/assets/js/i18n.js"></script>
 </body>
 </html>

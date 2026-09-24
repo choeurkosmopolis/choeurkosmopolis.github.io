@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kosmopolis</title>
+  <title data-i18n="index.title">Kosmopolis</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -21,28 +21,33 @@
             <img src="/assets/images/Logo_Kosmopolis_2019-removebg.png" alt="Logo Kosmopolis" class="logo-image">
           </a>
         </li>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/about">À propos</a></li>
-        <li><a href="/medias">Médias</a></li>
-        <li><a href="/agenda">Agenda</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="/about" data-i18n="nav.about">À propos</a></li>
+        <li><a href="/medias" data-i18n="nav.medias">Médias</a></li>
+        <li><a href="/agenda" data-i18n="nav.agenda">Agenda</a></li>
+        <li><a href="/contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language / Taal">
+      <button type="button" data-lang="fr">FR</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="nl">NL</button>
+    </div>
     <h1 class="logo-title"><a href="/">KOS<span class="rainbow">MO</span>POLIS</a></h1>
-    <p>Choeur de chambre mixte basé à Bruxelles.</p>
+    <p data-i18n="header.tagline">Choeur de chambre mixte basé à Bruxelles.</p>
   </header>
 
   <main>
     <div class="card">
-      <h2>Bienvenue au Choeur Kosmopolis !</h2>
+      <h2 data-i18n="index.welcome">Bienvenue au Choeur Kosmopolis !</h2>
       <img src="/assets/images/groupe.jpg" alt="Groupe" class="chorale-image">
-      <p> Ensemble vocal Kosmopolite au coeur de Bruxelles ! </p>
-      <a href="/agenda" class="btn">Voir nos événements</a>
+      <p data-i18n="index.intro"> Ensemble vocal Kosmopolite au coeur de Bruxelles ! </p>
+      <a href="/agenda" class="btn" data-i18n="index.events">Voir nos événements</a>
     </div>
   </main>
 
   <footer>
-    <p>© 2026 - Choeur Kosmopolis</p>
+    <p data-i18n="footer.copyright">© 2026 - Choeur Kosmopolis</p>
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -70,5 +75,6 @@
       }
     });
   </script>
+  <script src="/assets/js/i18n.js"></script>
 </body>
 </html>
