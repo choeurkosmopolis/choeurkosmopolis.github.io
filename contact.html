@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Kosmopolis</title>
+  <title data-i18n="contact.title">Contact - Kosmopolis</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -21,37 +21,42 @@
             <img src="/assets/images/Logo_Kosmopolis_2019-removebg.png" alt="Logo Kosmopolis" class="logo-image">
           </a>
         </li>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/about">À propos</a></li>
-        <li><a href="/medias">Medias</a></li>
-        <li><a href="/agenda">Agenda</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="/about" data-i18n="nav.about">À propos</a></li>
+        <li><a href="/medias" data-i18n="nav.medias">Médias</a></li>
+        <li><a href="/agenda" data-i18n="nav.agenda">Agenda</a></li>
+        <li><a href="/contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language / Taal">
+      <button type="button" data-lang="fr">FR</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="nl">NL</button>
+    </div>
     <h1 class="logo-title"><a href="/">KOS<span class="rainbow">MO</span>POLIS</a></h1>
-    <p>Choeur de chambre mixte basé à Bruxelles.</p>
+    <p data-i18n="header.tagline">Choeur de chambre mixte basé à Bruxelles.</p>
   </header>
 
   <main>
     <div class="card">
-      <h2>Rejoignez-nous</h2>
-      <p>Nous recherchons pour tous les pupitres, des chanteurs...</p>
+      <h2 data-i18n="contact.join">Rejoignez-nous</h2>
+      <p data-i18n="contact.join.intro">Nous recherchons pour tous les pupitres, des chanteurs...</p>
       <ul>
-        <li>Ayant une solide expérience de chant choral, autonomes dans le travail de préparation des partitions et chantant juste.</li>
-        <li>Ayant envie de s'investir dans un ensemble où chaque voix compte.</li>
-        <li>Motivés par un travail exigeant du son du choeur.</li>
-        <li>Motivés par l'idée de chanter dans des langues étrangères et occasionnellement par coeur.</li>
-        <li>Sympas et pas contre l'idée de boire des verres ensemble après les répés...! :)</li>
+        <li data-i18n="contact.join.li1">Ayant une solide expérience de chant choral, autonomes dans le travail de préparation des partitions et chantant juste.</li>
+        <li data-i18n="contact.join.li2">Ayant envie de s'investir dans un ensemble où chaque voix compte.</li>
+        <li data-i18n="contact.join.li3">Motivés par un travail exigeant du son du choeur.</li>
+        <li data-i18n="contact.join.li4">Motivés par l'idée de chanter dans des langues étrangères et occasionnellement par coeur.</li>
+        <li data-i18n="contact.join.li5">Sympas et pas contre l'idée de boire des verres ensemble après les répés...! :)</li>
       </ul>
       <p>
         Nous répétons tous les <strong>lundis de 19h à 21h30</strong> à La Maison Qui Chante à Ixelles.
       </p>
       <p>
-        <a href="https://forms.gle/5ws8dmm6RXPtwGC69" class="btn" target="_blank" rel="noopener noreferrer">Passer une audition</a>
+        <a href="https://forms.gle/5ws8dmm6RXPtwGC69" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="contact.audition">Passer une audition</a>
       </p>
     </div>
     <div class="card">
-      <h2>Contactez-nous</h2>
+      <h2 data-i18n="contact.heading">Contactez-nous</h2>
       <p>
         Une question, une envie de travailler avec le choeur, une proposition de participer à un événement ?
         Écrivez-nous, nous vous répondrons avec plaisir.
@@ -59,26 +64,26 @@
       <form action="https://formspree.io/f/xwlewvrn" method="POST">
         <input type="hidden" name="_subject" value="Nouveau message du site Choeur Kosmopolis">
         <p>
-          <label for="nom">Nom :</label>
+          <label for="nom" data-i18n="contact.name">Nom :</label>
           <input type="text" id="nom" name="nom" required>
         </p>
         <p>
-          <label for="email">Email :</label>
+          <label for="email" data-i18n="contact.email">Email :</label>
           <input type="email" id="email" name="email" required>
         </p>
         <p>
-          <label for="message">Message :</label>
+          <label for="message" data-i18n="contact.message">Message :</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </p>
         <p>
-          <button type="submit" class="btn">Envoyer</button>
+          <button type="submit" class="btn" data-i18n="contact.send">Envoyer</button>
         </p>
       </form>
     </div>
   </main>
 
   <footer>
-    <p>© 2026 - Choeur Kosmopolis</p>
+    <p data-i18n="footer.copyright">© 2026 - Choeur Kosmopolis</p>
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -106,5 +111,6 @@
       }
     });
   </script>
+  <script src="/assets/js/i18n.js"></script>
 </body>
 </html>

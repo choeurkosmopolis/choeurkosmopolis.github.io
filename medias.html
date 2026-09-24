@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vidéos - Kosmopolis</title>
+  <title data-i18n="medias.title">Vidéos - Kosmopolis</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -21,26 +21,31 @@
             <img src="/assets/images/Logo_Kosmopolis_2019-removebg.png" alt="Logo Kosmopolis" class="logo-image">
           </a>
         </li>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/about">À propos</a></li>
-        <li><a href="/medias">Medias</a></li>
-        <li><a href="/agenda">Agenda</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="/about" data-i18n="nav.about">À propos</a></li>
+        <li><a href="/medias" data-i18n="nav.medias">Médias</a></li>
+        <li><a href="/agenda" data-i18n="nav.agenda">Agenda</a></li>
+        <li><a href="/contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="lang-switch" role="group" aria-label="Langue / Language / Taal">
+      <button type="button" data-lang="fr">FR</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="nl">NL</button>
+    </div>
     <h1 class="logo-title"><a href="/">KOS<span class="rainbow">MO</span>POLIS</a></h1>
-    <p>Choeur de chambre mixte basé à Bruxelles.</p>
+    <p data-i18n="header.tagline">Choeur de chambre mixte basé à Bruxelles.</p>
   </header>
 
   <main>
     <div class="card">
-      <h2>Nos vidéos</h2>
-      <p>Découvrez le Choeur Kosmopolis en spectacle. Bon visionnage !</p>
+      <h2 data-i18n="medias.heading">Nos vidéos</h2>
+      <p data-i18n="medias.intro">Découvrez le Choeur Kosmopolis en spectacle. Bon visionnage !</p>
     </div>
 
     <div class="card video-card">
       <h4 class="video-title">Carlos Guastavino - Se Equivoco La Paloma</h4>
-      <h5 class="video-title">(18 avril 2026 - Carlsbourg)</h4>
+      <h5 class="video-title" data-i18n="medias.date">(18 avril 2026 - Carlsbourg)</h4>
       <div class="video-wrapper">
         <iframe
           src="https://www.youtube-nocookie.com/embed/8bt6runjTYs"
@@ -55,7 +60,7 @@
 
     <div class="card video-card">
       <h4 class="video-title">René Clausen - Set Me As A Seal</h4>
-      <h5 class="video-title">(18 avril 2026 - Carlsbourg)</h4>
+      <h5 class="video-title" data-i18n="medias.date">(18 avril 2026 - Carlsbourg)</h4>
       <div class="video-wrapper">
         <iframe
           src="https://www.youtube-nocookie.com/embed/quVWN2JtaJQ"
@@ -70,7 +75,7 @@
   </main>
 
   <footer>
-    <p>© 2026 - Choeur Kosmopolis</p>
+    <p data-i18n="footer.copyright">© 2026 - Choeur Kosmopolis</p>
   </footer>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -98,5 +103,6 @@
       }
     });
   </script>
+  <script src="/assets/js/i18n.js"></script>
 </body>
 </html>
