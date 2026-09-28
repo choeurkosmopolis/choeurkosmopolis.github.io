@@ -134,7 +134,7 @@ window.KosmopolisI18n = (function () {
       'agenda.concert.placevalue': 'Saint Anne\'s Church, Auderghem',
       'agenda.concert.p1': 'Come and listen to our end-of-year concert! A varied programme blending songs from Europe and around the world.',
       'agenda.concert.book': 'Book a ticket',
-      'media.title': 'Videos - Kosmopolis',
+      'media.title': 'Media - Kosmopolis',
       'media.heading': 'Our videos',
       'media.intro': 'Discover the Kosmopolis Choir in performance. Enjoy!',
       'media.date': '(18 April 2026 - Carlsbourg)',
