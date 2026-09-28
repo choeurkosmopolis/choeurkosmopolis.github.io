@@ -96,7 +96,7 @@ window.KosmopolisI18n = (function () {
       'footer.copyright': '© 2026 - Kosmopolis Choir',
       'index.title': 'Kosmopolis',
       'index.welcome': 'Welcome to the Kosmopolis Choir!',
-      'index.intro': 'A cosmopolitan vocal ensemble in the heart of Brussels!',
+      'index.intro': 'A kosmopolitan vocal ensemble in the heart of Brussels!',
       'index.events': 'See our events',
       'about.title': 'About - Kosmopolis',
       'about.heading': 'About the Kosmopolis Choir',
